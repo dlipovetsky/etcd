@@ -114,7 +114,8 @@ See [code changes](https://github.com/coreos/etcd/compare/v3.3.0...v3.4.0) and [
   - `"github.com/coreos/etcd/rafthttp"` to `"github.com/coreos/etcd/etcdserver/api/rafthttp"`.
   - `"github.com/coreos/etcd/snap"` to `"github.com/coreos/etcd/etcdserver/api/snap"`.
   - `"github.com/coreos/etcd/store"` to `"github.com/coreos/etcd/etcdserver/api/v2store"`.
-
+- [Change snapshot file permissions](https://github.com/coreos/etcd/pull/9977): On Linux, the snapshot file is readable by the user only.
+  
 ### Dependency
 
 - Upgrade [`google.golang.org/grpc`](https://github.com/grpc/grpc-go/releases) from [**`v1.7.5`**](https://github.com/grpc/grpc-go/releases/tag/v1.7.5) to [**`v1.13.0`**](https://github.com/grpc/grpc-go/releases/tag/v1.13.0).
